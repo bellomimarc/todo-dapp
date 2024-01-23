@@ -1,0 +1,2 @@
+- download ganache
+- install truffle `npm install -g truffle`
