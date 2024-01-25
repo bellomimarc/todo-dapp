@@ -63,8 +63,8 @@ App = {
     // Render out each task with a new task template
     for (var i = 1; i <= taskCount; i++) {
       // Fetch the task data from the blockchain
-      const task = await App.todoList.methods.tasks(i);
-      const taskId = task[0].toNumber();
+      const task = await App.todoList.methods.tasks(i).call();
+      const taskId = Number(task[0]);
       const taskContent = task[1];
       const taskCompleted = task[2];
 

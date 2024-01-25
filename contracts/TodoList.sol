@@ -6,6 +6,8 @@ contract TodoList {
 
     constructor() {
         taskCount = 0;
+
+        createTask("This is a sample task.");
     }
 
     struct Task {
